@@ -1,0 +1,121 @@
+.modal-details-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;;
+    background: #00000099;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-details-box {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 4px;
+    max-width: 70%;
+    /* min-width: 600px; */
+    max-height: 80vh;
+    /* max-height: 350px; */
+    overflow-y: scroll;
+    position: relative;
+}
+
+.modal-image-container {
+    position: relative;
+    max-height: 72vh;
+    max-width: 70%;
+    
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+}
+
+.modal-image {
+    position: relative;
+    max-width: 100%;
+    max-height: 72vh;
+    min-height: 90%;
+    display: flex;
+    flex: 1;
+    /* align-self: center; */
+}
+
+.modal-details-container {
+    min-width: 20%;
+    position: relative;
+    max-height: 90%;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.modal-details-title {
+    font-size: calc(12px + 1vmin);
+    font-weight: bold;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.modal-details-subtext {
+    margin: 5px 0px;
+    font-size: calc(8px + 1vmin);
+}
+
+.modal-details-smalltext {
+    color: #999;
+    font-size: calc(6px + 1vmin);
+}
+
+.modal-details-tags {
+    margin-top: 20px;
+    background-color: #1D9CEB44;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #1D9CEB;
+    font-size: calc(5px + 1vmin);
+}
+
+@media (min-width: 300px) and (max-width: 501px) {
+
+    .modal-details-box {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 4px;
+        max-width: 70%;
+        /* min-width: 600px; */
+        max-height: 80vh;
+        /* max-height: 350px; */
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    .modal-image {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-width: 130%;
+        height: auto;
+        max-height: none;
+        min-height: auto;
+        display: flex;
+        flex: 1;
+        /* align-self: center; */
+    }
+    
+    .modal-details-container {
+        min-width: 90%;
+        position: relative;
+        max-height: none;
+        margin: 20px;
+        padding-top: 0px;
+    }
+
+}
